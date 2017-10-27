@@ -6,11 +6,13 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   <meta charset="utf-8">
   <meta http-equiv=“X-UA-Compatible” content=“IE-edge”>
+  <style>@import url('https://fonts.googleapis.com/css?family=Poppins');</style>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
   <div id="pageContainer">
+    <div id="welcomeMessage">💸 Just a Tip Calculator 💸</div>
     <form>
       <input id="subTotal" type="number" placeholder="Enter Check Total Here!" value="">
       <br>
@@ -18,20 +20,11 @@
       <br><br>
       <input id="submitButton" type="button" value="Calculate Tip">
     </form>
-
-
-
-    <div id="totalTip">Total Tip Amount
-
+    <div id="results">
+      <div id="totalTip"></div>
+      <div id="grandTotal"></div>
     </div>
-    <div id="grandTotal">Grand Total
-
-    </div>
-
   </div>
-
-
-
 
 </body>
 <script src="script.js"></script>

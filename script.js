@@ -19,7 +19,7 @@ function calculateTip(subTotalValue, tipAmountDecimal) {
   var totalCheckAmount = tipAmountFinal + subTotalValue;
   console.log(totalCheckAmount);
 
-  totalTip.innerHTML = tipAmountFinal;
-  grandTotal.innerHTML = totalCheckAmount;
+  totalTip.innerHTML = "Tip Total: 💲" + tipAmountFinal.toFixed(2);
+  grandTotal.innerHTML = "Check Total: 💲" + totalCheckAmount.toFixed(2);
 
 }
