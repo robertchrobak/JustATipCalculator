@@ -9,10 +9,10 @@ html {
   color: chartreuse;
 }
 
-#pageContainer{
-        display: flex;
-        text-align: center;
-        flex-direction: column;
+#pageContainer {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
 }
 
 input {
