@@ -1,33 +1,89 @@
 html {
-  background-color: slategray;
-  font-size: 3rem;
-  font-family: 'Poppins', sans-serif;
+  background-color: lightgray;
+  font-size: 1rem;
+  font-family: 'Arvo', monospace;
+  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 3s; /* Firefox < 16 */
+  -ms-animation: fadein 3s; /* Internet Explorer */
+  -o-animation: fadein 3s; /* Opera < 12.1 */
+  animation: fadein 3s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }
 
 #welcomeMessage {
-  padding: 30px 0px;
-  color: chartreuse;
+  font-size: 2rem;
+  font-size: 9vw;
+  padding: 20px 0px;
+  color: #248130;
 }
 
 #pageContainer {
-  display: flex;
   text-align: center;
+}
+
+form {
+  display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 input {
   text-align: center;
+  font-family: 'Arvo', serif;
   margin: 20px 0px;
-  width: 500px;
+  width: 300px;
   height: 50px;
-  font-size: .7rem;
-  border-radius: 25px;
+  font-size: 1rem;
+  border: 1px solid white;
 }
 
-.submitButton {
-  font-size: 3rem;
+input:hover {
+  border: 1px solid lightgray;
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#submitButton {
+  background-color: #248130;
+  color: white;
+  border: 0;
+}
+
+#submitButton:hover {
+  background-color: #307839;
+}
+
+#submitButton:active {
+  background-color: #1c6926;
 }
 
 #results {
-  padding: 30px 0px;
+  font-size: 1.8rem;
+  padding: 20px 0px;
+  line-height: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  input {
+    font-size: 1.5rem;
+  }
 }
