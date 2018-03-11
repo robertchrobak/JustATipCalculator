@@ -52,6 +52,7 @@ input {
   font-size: 1rem;
   border: 1px solid white;
   border-radius: 0;
+  -webkit-appearance: none;
 }
 
 input:hover {
@@ -68,6 +69,7 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
   color: white;
   border: 0;
   border-radius: 0;
+  -webkit-appearance: none;
 }
 
 #submitButton:hover {
